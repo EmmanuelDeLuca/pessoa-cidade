@@ -1,11 +1,11 @@
-import React from 'react';
-
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from "./routes";
 
 export const App: React.FC = () => {
   return (
-    <div className="App">
-      Teste
-    </div>
+    <BrowserRouter>
+      <AppRoutes/>
+    </BrowserRouter>
   );
-}
-
+};
